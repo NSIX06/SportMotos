@@ -1,0 +1,147 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #00ced1, #f0f8ff);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    box-sizing: border-box; /* Inclui padding e borda no cálculo da largura/altura */
+}
+
+/* Container principal */
+#main-container {
+    width: 90%;
+    max-width: 800px;
+    background-color: #e0f7f5;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    color: #006d75;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Estilo da tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 1px solid #006d75; /* Verde turquesa mais escuro */
+}
+
+th, td {
+    padding: 10px;
+    text-align: center;
+    font-size: 14px;
+    color: #006d75;
+}
+
+th {
+    background-color: #00ced1; /* Verde turquesa */
+    color: white;
+}
+
+/* Botões de ação */
+.btn {
+    padding: 8px;
+    border-radius: 4px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 14px;
+    text-align: center;
+    display: inline-block; /* Garante que eles se alinhem corretamente */
+}
+
+.btn-edit {
+    background-color: #4CAF50; /* Verde para o botão editar */
+    margin-right: 20px; /* Espaço entre os botões */
+}
+
+.btn-edit:hover {
+    background-color: #45a049;
+}
+
+.btn-delete {
+    background-color: #f44336; /* Vermelho para o botão excluir */
+}
+
+.btn-delete:hover {
+    background-color: #d32f2f;
+}
+
+/* Botão de voltar */
+#back-button {
+    display: block;
+    text-align: center;
+    padding: 10px;
+    background-color: #008b8b; /* Verde turquesa */
+    color: white;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 16px;
+    width: 100px;
+    margin: 0 auto;
+}
+
+#back-button:hover {
+    background-color: #006d75;
+    margin-bottom: 10px;
+}
+
+
+/* Estilo para o formulário de filtro */
+.filtro {
+    margin-bottom: 20px; /* Espaço abaixo do formulário */
+    display: flex; /* Usa flexbox para alinhar os itens */
+    justify-content: center; /* Centraliza os itens horizontalmente */
+}
+
+.form-control {
+    width: 70%; /* Largura do campo de texto */
+    padding: 10px; /* Espaçamento interno */
+    border: 1px solid #ccc; /* Borda cinza */
+    border-radius: 4px; /* Bordas arredondadas */
+    font-size: 16px; /* Tamanho da fonte */
+    margin-right: 10px; /* Espaço à direita do campo */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Sombra leve para dar profundidade */
+    transition: border-color 0.3s; /* Efeito de transição para a cor da borda */
+}
+
+/* Estilo do campo de texto quando em foco */
+.form-control:focus {
+    border-color: #007bff; /* Cor da borda ao focar */
+    outline: none; /* Remove o contorno padrão */
+}
+
+.botao {
+    padding: 10px 15px; /* Espaçamento interno */
+    background-color: #007bff; /* Cor de fundo do botão */
+    color: white; /* Cor do texto */
+    border: none; /* Remove a borda */
+    border-radius: 4px; /* Bordas arredondadas */
+    cursor: pointer; /* Muda o cursor ao passar o mouse */
+    font-size: 16px; /* Tamanho da fonte */
+    transition: background-color 0.3s; /* Efeito de transição */
+}
+
+/* Efeito ao passar o mouse sobre o botão */
+.botao:hover {
+    background-color: #0056b3; /* Cor de fundo ao passar o mouse */
+}
+
+/* Adiciona espaço acima do título da tabela */
+table {
+    margin-top: 20px; /* Espaço acima da tabela */
+}
