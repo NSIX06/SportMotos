@@ -10,7 +10,11 @@ if (isset($_GET['id'])) {
 
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
+<<<<<<< HEAD
     $servico->create($_POST["tipo_servico"], $_POST["valor"]);
+=======
+    $servico->create($_POST["pneus"], $_POST["freios"], $_POST["oleo_motor"], $_POST["corrente"], $_POST["bateria"], $_POST["filtros"], $_POST["valor"]);
+>>>>>>> 302088d7b262acf2844b9b76868b862b15b0f671
 
     if ($servico->atualizarServicos($id)) {
         echo "<script>alert('Serviço atualizado com sucesso!'); window.location.href='relatorioServicos.php';</script>";
@@ -33,8 +37,28 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <div id="main-container">
     <h1>Editar Serviço</h1>
     <form method="POST">
+<<<<<<< HEAD
         <label>Serviços:</label>
         <input type="text" name="tipo_servico" value="<?php echo $servico->getPneus(); ?>" required>
+=======
+        <label>Pneus:</label>
+        <input type="text" name="pneus" value="<?php echo $servico->getPneus(); ?>" required>
+
+        <label>Freios:</label>
+        <input type="text" name="freios" value="<?php echo $servico->getFreios(); ?>" required>
+
+        <label>Óleo do Motor:</label>
+        <input type="text" name="oleo_motor" value="<?php echo $servico->getOleo_motor(); ?>" required>
+
+        <label>Corrente:</label>
+        <input type="text" name="corrente" value="<?php echo $servico->getCorrente(); ?>" required>
+
+        <label>Bateria:</label>
+        <input type="text" name="bateria" value="<?php echo $servico->getBateria(); ?>" required>
+
+        <label>Filtros:</label>
+        <input type="text" name="filtros" value="<?php echo $servico->getFiltros(); ?>" required>
+>>>>>>> 302088d7b262acf2844b9b76868b862b15b0f671
 
         <label>Valor:</label>
         <input type="number" name="valor" value="<?php echo $servico->getValor(); ?>" step="0.01" required>

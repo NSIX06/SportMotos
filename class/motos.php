@@ -92,6 +92,7 @@ class moto
         return true;
     }
 
+<<<<<<< HEAD
     public function listarMotosFiltradas($filtro = '') {
         try {
             // Construa a consulta SQL para selecionar as motos com filtro, se fornecido
@@ -118,6 +119,19 @@ class moto
     }
     
     
+=======
+    public function listarMoto() {
+        try {
+            $sql = "CALL psListarMoto()"; 
+            $statement = $this->conn->prepare($sql);
+            $statement->execute();
+            return $statement->fetchAll(PDO::FETCH_ASSOC); 
+        } catch (PDOException $e) {
+            echo "Erro ao listar motos: " . $e->getMessage();
+            return false; 
+        }
+    }
+>>>>>>> 302088d7b262acf2844b9b76868b862b15b0f671
 
 
     public function buscarMoto($_id) {

@@ -97,6 +97,7 @@ th {
 
 #back-button:hover {
     background-color: #006d75;
+<<<<<<< HEAD
     margin-bottom: 10px;
 }
 
@@ -145,3 +146,6 @@ th {
 table {
     margin-top: 20px; /* Espaço acima da tabela */
 }
+=======
+}
+>>>>>>> 302088d7b262acf2844b9b76868b862b15b0f671

@@ -1,7 +1,11 @@
 <?php
 include_once("class/servicos.php");
+<<<<<<< HEAD
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
+=======
+error_reporting(0);
+>>>>>>> 302088d7b262acf2844b9b76868b862b15b0f671
 ?>
 
 <!DOCTYPE html>
@@ -17,12 +21,36 @@ ini_set('display_errors', 1);
 <div id="main-container">
     <h1>Cadastro de Serviços</h1>
     <form method="POST">
+<<<<<<< HEAD
         <label>Serviços:</label>
         <input type="text" name="tipo_servico" required placeholder="Insira um serviço">
+=======
+        <label>Pneus:</label>
+        <input type="text" name="pneus" required placeholder="Serviço de pneus">
+
+        <label>Freios:</label>
+        <input type="text" name="freios" required placeholder="Serviço de freios">
+
+        <label>Óleo do Motor:</label>
+        <input type="text" name="oleo_motor" required placeholder="Serviço de óleo">
+
+        <label>Corrente:</label>
+        <input type="text" name="corrente" required placeholder="Serviço de corrente">
+
+        <label>Bateria:</label>
+        <input type="text" name="bateria" required placeholder="Serviço de bateria">
+
+        <label>Filtros:</label>
+        <input type="text" name="filtros" required placeholder="Serviço de filtros">
+>>>>>>> 302088d7b262acf2844b9b76868b862b15b0f671
 
         <label>Valor:</label>
         <input type="number" name="valor" step="0.01" required placeholder="Valor do serviço">
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 302088d7b262acf2844b9b76868b862b15b0f671
         <div id="button-container">
             <button type="submit" name="inserir">Cadastrar</button>
             <a href="index.php" class="back-button">Voltar</a>
@@ -30,9 +58,15 @@ ini_set('display_errors', 1);
     </form>
 
     <?php
+<<<<<<< HEAD
     if (isset($_POST["inserir"])) { // Alterei de $_REQUEST para $_POST
         $servico = new servicos();
         $servico->create($_POST["tipo_servico"], $_POST["valor"]); // Alterei de $_REQUEST para $_POST
+=======
+    if (isset($_REQUEST["inserir"])) {
+        $servico = new servicos();
+        $servico->create($_REQUEST["pneus"], $_REQUEST["freios"], $_REQUEST["oleo_motor"], $_REQUEST["corrente"], $_REQUEST["bateria"], $_REQUEST["filtros"], $_REQUEST["valor"]);
+>>>>>>> 302088d7b262acf2844b9b76868b862b15b0f671
 
         echo $servico->inserirServicos() ?
             "<p>Serviço cadastrado com sucesso.</p>" :

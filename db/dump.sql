@@ -80,6 +80,7 @@ CREATE PROCEDURE puMoto(
     IN _cor_secundaria	varchar(100),
     IN _valor			decimal(10,2)
 )
+<<<<<<< HEAD
     BEGIN
         UPDATE moto
             SET modelo = _modelo,
@@ -90,6 +91,18 @@ CREATE PROCEDURE puMoto(
                 valor = _valor,
         WHERE id_moto = _id;
     END //
+=======
+BEGIN
+	UPDATE moto
+    	SET modelo = _modelo,
+        	ano_modelo = _ano_modelo,
+            ano_fabricacao = _ano_fabricacao,
+             cor_primaria = _cor_primaria,
+              cor_secundaria = _cor_secundaria,
+               valor = _valor,
+    WHERE id_moto = _id;
+END //
+>>>>>>> 302088d7b262acf2844b9b76868b862b15b0f671
 
 
 DELIMITER //
@@ -105,7 +118,11 @@ CREATE PROCEDURE puMoto(
 BEGIN
 	UPDATE moto
 		SET modelo = _modelo,
+<<<<<<< HEAD
             ano_modelo = _ano_modelo,
+=======
+        	ano_modelo = _ano_modelo,
+>>>>>>> 302088d7b262acf2844b9b76868b862b15b0f671
             ano_fabricacao = _ano_fabricacao,
             cor_primaria = _cor_primaria,
             cor_secundaria = _cor_secundaria,
@@ -127,9 +144,15 @@ CREATE PROCEDURE puServico(
 BEGIN
 	UPDATE servicos
 		SET pneus = _pneus	,
+<<<<<<< HEAD
             freios = _freios,
             oleo_motor = _oleo_motor,
             corrente = _corrente,
+=======
+        	freios = _freios,
+            oleo_motor = _oleo_motor,
+           	corrente = _corrente,
+>>>>>>> 302088d7b262acf2844b9b76868b862b15b0f671
             bateria = _bateria,
             filtros = _filtros,
             valor = _valor
